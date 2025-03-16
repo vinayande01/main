@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: rgba(150, 250, 0, 0.366);
+      }
+      input {
+        padding: 8px;
+        margin-right: 5px;
+      }
+      button {
+        padding: 8px;
+        cursor: pointer;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 24px;
+        background: rgb(189, 209, 109);
+        display: flex;
+        justify-content: space-between;
+      }
+
+      footer {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>To-Do List ✅</h2>
+
+    <input type="text" id="taskInput" placeholder="Enter a task" />
+    <button class="btn" onclick="addTask()">Add Task</button>
+
+    <ul id="taskList"></ul>
+
+    <footer>
+      <p>&copy; <span id="year"></span> ANDE VINAY. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
