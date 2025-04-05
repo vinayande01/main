@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="head">Expense Tracker</h1>
+    </header>
+    <main>
+      <div class="options">
+        <div class="option">
+          <h2>Category</h2>
+          <select id="category">
+            <option value="travel">Travel</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="food">Food</option>
+            <option value="others">Others</option>
+          </select>
+          <input
+            type="text"
+            id="custom-category"
+            placeholder="Enter custom category"
+            class="hidden"
+          />
+        </div>
+        <div class="option">
+          <h2>Amount</h2>
+          <input type="number" id="amount" placeholder="Enter amount" />
+        </div>
+        <div class="option">
+          <h2>Date</h2>
+          <input type="date" id="date" />
+        </div>
+        <button class="show-btn">ADD</button>
+        <button class="download-btn">Download CSV</button>
+      </div>
+      <table>
+        <thead class="thead">
+          <tr>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody class="show-data"></tbody>
+      </table>
+
+      <div class="total">
+        <p>Total -</p>
+        <h3 class="amount">0</h3>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> All rights reserved @Ande Vinay</p>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
