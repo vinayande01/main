@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <nav class="nav-cont">
+      <div class="logo">
+        <h1><a href="#">Vinay Ande</a></h1>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li class="btn"><a href="#About">About</a></li>
+          <li class="btn"><a href="#Experience">Experience</a></li>
+          <li class="btn"><a href="#Project">Projects</a></li>
+          <li class="btn"><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="nav-ham">
+      <div class="logo">
+        <h1><a href="#">Vinay Ande</a></h1>
+      </div>
+      <div class="ham-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="nav-ham-links">
+          <ul>
+            <li class="btn" onclick="toggleMenu()">
+              <a href="#About">About</a>
+            </li>
+            <li class="btn" onclick="toggleMenu()">
+              <a href="#Experience">Experience</a>
+            </li>
+            <li class="btn" onclick="toggleMenu()">
+              <a href="#Project">Projects</a>
+            </li>
+            <li class="btn" onclick="toggleMenu()">
+              <a href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="profile-img">
+        <img src="./Asset/profile.webp" alt="profile" />
+      </div>
+      <div class="profile-text">
+        <p>Hello, i'm</p>
+        <h1>Vinay Ande</h1>
+        <h2>Frontend Developer</h2>
+        <div class="hero-btn">
+          <a
+            href="#cv"
+            onclick="window.open('./Asset/Resume_venkatesh (4).pdf')"
+            >Download CV</a
+          >
+          <a href="#Contact">Contact me</a>
+        </div>
+        <div class="hero-svg">
+          <svg
+            class="github"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            onclick="location.href='https://github.com/'"
+          >
+            <path
+              d="M44,24c0,8.96-5.88,16.54-14,19.08V38c0-1.71-0.72-3.24-1.86-4.34c5.24-0.95,7.86-4,7.86-9.66c0-2.45-0.5-4.39-1.48-5.9 c0.44-1.71,0.7-4.14-0.52-6.1c-2.36,0-4.01,1.39-4.98,2.53C27.57,14.18,25.9,14,24,14c-1.8,0-3.46,0.2-4.94,0.61 C18.1,13.46,16.42,12,14,12c-1.42,2.28-0.84,4.74-0.3,6.12C12.62,19.63,12,21.57,12,24c0,5.66,2.62,8.71,7.86,9.66 c-0.67,0.65-1.19,1.44-1.51,2.34H16c-1.44,0-2-0.64-2.77-1.68c-0.77-1.04-1.6-1.74-2.59-2.03c-0.53-0.06-0.89,0.37-0.42,0.75 c1.57,1.13,1.68,2.98,2.31,4.19C13.1,38.32,14.28,39,15.61,39H18v4.08C9.88,40.54,4,32.96,4,24C4,12.95,12.95,4,24,4 S44,12.95,44,24z"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="48"
+            height="48"
+            viewBox="0 0 30 30"
+            onclick="location.href='https://www.linkedin.com/'"
+          >
+            <path
+              d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <a class="arrowhome" href="#About">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="#000000"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M216.49,127.51a12,12,0,0,1,0,17l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,1,1,17-17L128,199l71.51-71.52A12,12,0,0,1,216.49,127.51Zm-97,17a12,12,0,0,0,17,0l80-80a12,12,0,0,0-17-17L128,119,56.49,47.51a12,12,0,0,0-17,17Z"
+          ></path>
+        </svg>
+      </a>
+    </section>
+
+    <section class="about align" id="About">
+      <p>Get To Know More</p>
+      <h1>About Me</h1>
+      <div class="about-text-container">
+        <img src="./Asset/profile-dull.webp" alt="about-profile" />
+        <div class="about-svg">
+          <div class="about-svg-left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M226.53,56.41l-96-32a8,8,0,0,0-5.06,0l-96,32A8,8,0,0,0,24,64v80a8,8,0,0,0,16,0V75.1L73.59,86.29a64,64,0,0,0,20.65,88.05c-18,7.06-33.56,19.83-44.94,37.29a8,8,0,1,0,13.4,8.74C77.77,197.25,101.57,184,128,184s50.23,13.25,65.3,36.37a8,8,0,0,0,13.4-8.74c-11.38-17.46-27-30.23-44.94-37.29a64,64,0,0,0,20.65-88l44.12-14.7a8,8,0,0,0,0-15.18ZM176,120A48,48,0,1,1,89.35,91.55l36.12,12a8,8,0,0,0,5.06,0l36.12-12A47.89,47.89,0,0,1,176,120Z"
+              ></path>
+            </svg>
+            <h3>Education</h3>
+            <p>B.tech</p>
+            <p>Computer Science</p>
+          </div>
+          <div class="about-svg-right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M216,96A88,88,0,1,0,72,163.83V240a8,8,0,0,0,11.58,7.16L128,225l44.43,22.21A8.07,8.07,0,0,0,176,248a8,8,0,0,0,8-8V163.83A87.85,87.85,0,0,0,216,96ZM56,96a72,72,0,1,1,72,72A72.08,72.08,0,0,1,56,96Zm16,0a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"
+              ></path>
+              <h3>Experience</h3>
+              <p>2+ years</p>
+              <p>Frontend Developer</p>
+            </svg>
+          </div>
+          <p class="about-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos eum
+            vitae hic rerum, ut illum temporibus dolorem repellendus aspernatur.
+            Sit quis quidem consequuntur cupiditate magnam libero nulla rem quas
+            repudiandae!Lorem Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Molestiae sint dolore inventore esse sed modi,
+            explicabo harum vel adipisci aliquid dignissimos vitae, omnis dicta.
+            Ex ratione earum nesciunt maxime. Ex.
+          </p>
+        </div>
+      </div>
+      <a class="arrowabout" href="#Experience">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="#000000"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M216.49,127.51a12,12,0,0,1,0,17l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,1,1,17-17L128,199l71.51-71.52A12,12,0,0,1,216.49,127.51Zm-97,17a12,12,0,0,0,17,0l80-80a12,12,0,0,0-17-17L128,119,56.49,47.51a12,12,0,0,0-17,17Z"
+          ></path>
+        </svg>
+      </a>
+    </section>
+
+    <section class="Experience align" id="Experience">
+      <p>Explore My</p>
+      <h1>Experience</h1>
+      <div>
+        <div class="Exp-skills">
+          <div class="Exp-skills-right">
+            <h2>Frontend Development</h2>
+            <div class="skills">
+              <article>
+                <img src="./Asset/check-circle-fill.svg" alt="cicle" />
+                <div>
+                  <h2>HTML</h2>
+                  <p>Expect</p>
+                </div>
+              </article>
+              <article>
+                <img src="./Asset/check-circle-fill.svg" alt="cicle" />
+                <div>
+                  <h2>CSS</h2>
+                  <p>Expect</p>
+                </div>
+              </article>
+              <article>
+                <img src="./Asset/check-circle-fill.svg" alt="cicle" />
+                <div>
+                  <h2>JavaScript</h2>
+                  <p>Expect</p>
+                </div>
+              </article>
+              <article>
+                <img src="./Asset/check-circle-fill.svg" alt="cicle" />
+                <div>
+                  <h2>REACT</h2>
+                  <p>Expect</p>
+                </div>
+              </article>
+              <article>
+                <img src="./Asset/check-circle-fill.svg" alt="cicle" />
+                <div>
+                  <h2>PYTHON</h2>
+                  <p>Expect</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="Exp-skills-left">
+            <h2>Frontend Development</h2>
+            <div class="skills">
+              <article>
+                <img src="./Asset/check-circle-fill.svg" alt="cicle" />
+                <div>
+                  <h2>HTML</h2>
+                  <p>Expect</p>
+                </div>
+              </article>
+              <article>
+                <img src="./Asset/check-circle-fill.svg" alt="cicle" />
+                <div>
+                  <h2>CSS</h2>
+                  <p>Expect</p>
+                </div>
+              </article>
+              <article>
+                <img src="./Asset/check-circle-fill.svg" alt="cicle" />
+                <div>
+                  <h2>JavaScript</h2>
+                  <p>Expect</p>
+                </div>
+              </article>
+              <article>
+                <img src="./Asset/check-circle-fill.svg" alt="cicle" />
+                <div>
+                  <h2>REACT</h2>
+                  <p>Expect</p>
+                </div>
+              </article>
+              <article>
+                <img src="./Asset/check-circle-fill.svg" alt="cicle" />
+                <div>
+                  <h2>PYTHON</h2>
+                  <p>Expect</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="arrowproject" href="#Project">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="#000000"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M216.49,127.51a12,12,0,0,1,0,17l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,1,1,17-17L128,199l71.51-71.52A12,12,0,0,1,216.49,127.51Zm-97,17a12,12,0,0,0,17,0l80-80a12,12,0,0,0-17-17L128,119,56.49,47.51a12,12,0,0,0-17,17Z"
+          ></path>
+        </svg>
+      </a>
+    </section>
+
+    <section class="Projects align" id="Project">
+      <p>Browse My Recent</p>
+      <h1>Projects</h1>
+      <div class="cards">
+        <div class="project-cards">
+          <img
+            src="./Asset/profile.webp"
+            alt="cardsimg"
+            height="200px"
+            width="200px"
+          />
+          <h3>Project</h3>
+          <div class="project-link">
+            <a href="#">Live</a>
+            <a href="#">Github</a>
+          </div>
+        </div>
+        <div class="project-cards">
+          <img
+            src="./Asset/profile.webp"
+            alt="cardsimg"
+            height="200px"
+            width="200px"
+          />
+          <h3>Project</h3>
+          <div class="project-link">
+            <a href="#">Live</a>
+            <a href="#">Github</a>
+          </div>
+        </div>
+        <div class="project-cards">
+          <img
+            src="./Asset/profile.webp"
+            alt="cardsimg"
+            height="200px"
+            width="200px"
+          />
+          <h3>Project</h3>
+          <div class="project-link">
+            <a href="#">Live</a>
+            <a href="#">Github</a>
+          </div>
+        </div>
+      </div>
+
+      <a class="arrowcontact" href="#Contact">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="#000000"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M216.49,127.51a12,12,0,0,1,0,17l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,1,1,17-17L128,199l71.51-71.52A12,12,0,0,1,216.49,127.51Zm-97,17a12,12,0,0,0,17,0l80-80a12,12,0,0,0-17-17L128,119,56.49,47.51a12,12,0,0,0-17,17Z"
+          ></path>
+        </svg>
+      </a>
+    </section>
+
+    <section class="contact align" id="Contact">
+      <p>Get in Touch</p>
+      <h1>Contact Me</h1>
+      <div class="mail">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="#000000"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M232,128c0,.51,0,1,0,1.52-.34,14.26-5.63,30.48-28,30.48-23.14,0-28-17.4-28-32V88a8,8,0,0,0-8.53-8A8.17,8.17,0,0,0,160,88.27v4a48,48,0,1,0,6.73,64.05,40.19,40.19,0,0,0,3.38,5C175.48,168,185.71,176,204,176a54.81,54.81,0,0,0,9.22-.75,4,4,0,0,1,4.09,6A104.05,104.05,0,0,1,125.91,232C71.13,230.9,26.2,186.86,24.08,132.11A104,104,0,1,1,232,128ZM96,128a32,32,0,1,0,32-32A32,32,0,0,0,96,128Z"
+          ></path>
+        </svg>
+        <a href="#">Example@gmail.com</a>
+      </div>
+    </section>
+
+    <footer>
+      <nav class="footer-nav-links">
+        <ul>
+          <li class="btn"><a href="#About">About</a></li>
+          <li class="btn"><a href="#Experience">Experience</a></li>
+          <li class="btn"><a href="#Project">Projects</a></li>
+          <li class="btn"><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <p class="footernote">
+        Copyright © 2025 Vinay Ande. All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
