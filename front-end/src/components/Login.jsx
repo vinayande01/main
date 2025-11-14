@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { handleError, handleSuccess } from "../../utils";
@@ -29,7 +29,7 @@ function Login() {
 
       const { message, token, status, name } = res;
       if (!response.ok) {
-        handleError(message || "Enter valid username and password");
+        return handleError(message || "Enter valid username and password");
       }
       handleSuccess(status || "Login Success");
       localStorage.setItem("JWT token", token);
