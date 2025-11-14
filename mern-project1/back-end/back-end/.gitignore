@@ -1,0 +1,20 @@
+# back-end .gitignore (Node / Express)
+
+# dependencies
+/node_modules/
+
+# dotenv
+.env
+
+# logs
+logs/
+*.log
+npm-debug.log*
+
+# build
+/dist/
+
+# editor
+.vscode/
+.idea/
+.DS_Store
